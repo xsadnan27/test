@@ -30,7 +30,7 @@ public class ThreeWordSeq {
 		}
 
 		else
-			System.out.println("No command line arguments found.");
+			System.out.println("No command line arguments found.nnnnnnnnn");
 
 	}
 
