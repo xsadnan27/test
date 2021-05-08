@@ -11,20 +11,16 @@ import java.util.stream.Collectors;
 public class ThreeWordSeq {
 
 	public ThreeWordSeq() {
-		
+
 	}
 
 	public static void main(String[] args) {
-
-		// check if length of args array is
-		// greater than 0
 
 		if (args.length > 0) {
 
 			try {
 				readFiles(args);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -35,16 +31,15 @@ public class ThreeWordSeq {
 	}
 
 	public static void readFiles(String[] args) throws IOException {
-	
+
 		String resultStringBuilder = null;
 
 		// iterating the args array and printing
 		// the command line arguments
 		for (String val : args) {
 
-			try (BufferedReader br
-					= new BufferedReader(new FileReader("src/main/resources/" + val))) {
-			
+			try (BufferedReader br = new BufferedReader(new FileReader("src/main/resources/" + val))) {
+
 				resultStringBuilder = readAlllinesWithStream(br);
 			}
 
